@@ -1,9 +1,19 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+package-lock.json
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+### Windows template
+# Windows image file caches
+
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
+
 
 # testing
 /coverage
