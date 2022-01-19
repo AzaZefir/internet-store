@@ -1,0 +1,71 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background: lightseagreen;
+    width: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.header img{
+    width: 70px;
+}
+.btn{
+    background: transparent;
+    border: none;
+    position: relative;
+}
+.btn .btntext{
+    color: rgb(185 28 28);
+    position: absolute;
+    padding: 3px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-radius: 10px;
+    background: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+
+}
+
+/* .hideheadercard{
+    background: white;
+    position: absolute;
+    top: 5rem;
+    right: 0.75rem;
+    padding: 5px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+} */
+
+.cardname{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
+
+.cardname img{
+    width: 80px;
+    height: 80px;
+    margin-right: 3px;
+}
+.cardname .btnremove{
+    color: red;
+    background: transparent;
+    border: 1px;
+}
+.total{
+    font-size: 1.115rem;
+    line-height: 1.95rem;
+    border: solid 1px;
+    border-top-width: 1px;
+    border-color: grey;
+    padding-top: 2px;
+    margin-top: 3px;
+    text-align: center;
+}
