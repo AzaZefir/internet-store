@@ -51,7 +51,7 @@ const GoodsItem: FC<IGoodsItem> = ({ goods }) => {
             </div>
           </div>
         </div>
-        <div className="text">${goods.price}</div>
+        <div className="text">{goods.price} сом</div>
         <Quantity count={count} setCount={setCount} />
         <button onClick={addHandler} className="btn">
           В корзину

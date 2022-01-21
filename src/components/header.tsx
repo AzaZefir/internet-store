@@ -76,7 +76,7 @@ const Header: FC = () => {
             <img src={item.imagePath} alt={item.name} />
             <div>
               <div>{item.name}</div>
-              <div>{`${item.count} x $${item.price.toLocaleString()}`}</div>
+              <div>{`${item.count} x ${item.price.toLocaleString()} сом`}</div>
               <button
                 className="btnremove"
                 onClick={() => removeHandler(item._id)}
@@ -88,7 +88,7 @@ const Header: FC = () => {
         ))}
 
         <div className="total">
-          Total: <b>${total.toLocaleString()}</b>
+          Total: <b>{total.toLocaleString()} сом</b>
         </div>
       </div>
     </div>
