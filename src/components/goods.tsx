@@ -1,7 +1,9 @@
 import React from "react";
 import { IGoods } from "../types";
 import GoodsItem from "./goodsItem";
-import {  } from "react-router-dom";
+import {} from "react-router-dom";
+
+import { sortBy } from "sort-by-typescript";
 
 const goods: IGoods[] = [
   {
@@ -28,7 +30,7 @@ const goods: IGoods[] = [
   },
   {
     _id: "wefreasa",
-    dateOfReceipt: "12.13.21",
+    dateOfReceipt: "12.02.21",
     category: "ПЫЛЕСОС",
     manufacturer: "Китай",
     imagePath:
@@ -39,7 +41,7 @@ const goods: IGoods[] = [
   },
   {
     _id: "waserferfeabie",
-    dateOfReceipt: "23.12.21",
+    dateOfReceipt: "23.01.21",
     category: "РОБОТ-ПЫЛЕСОС",
     manufacturer: "Китай",
     imagePath:
@@ -58,20 +60,25 @@ const goods: IGoods[] = [
     description: "Описание",
     name: "ФИТНЕС БРАСЛЕТ XIAOMI MI SMART BAND 5 (BHR4215GL/BHR4219RU)",
     price: 50,
-  }
+  },
+  
 ];
+goods.sort(sortBy("dateOfReceipt"));
+
 
 const Goods = () => {
   return (
     <div className="divdiv">
       <h1>Новинки</h1>
-      <button className="btnSort1" >сортировать по цене</button>
-      <button className="btnSort2">сортировать по дате</button>
+      {/* <button className="btnSort1" >сортировать по цене</button>
+      <button className="btnSort2">сортировать по дате</button> */}
       {goods.map((goods) => (
         <GoodsItem goods={goods} key={goods._id} />
       ))}
     </div>
   );
 };
+
+
 
 export default Goods;

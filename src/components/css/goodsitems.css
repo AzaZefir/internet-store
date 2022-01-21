@@ -43,7 +43,7 @@ h1 {
   color: white;
   border-radius: 7px;
 }
-.btnSort1 {
+/* .btnSort1 {
   width: 200px;
   margin: auto;
   padding: auto;
@@ -79,7 +79,7 @@ h1 {
   border: none;
   border-radius: 7px;
   color: blue;
-}
+} */
 .goodsdiv .dropdown-menu p {
   text-align: center;
   display: flex;
