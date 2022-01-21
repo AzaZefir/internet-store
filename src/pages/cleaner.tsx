@@ -1,10 +1,10 @@
 import React from "react";
 import { IGoods } from "../types";
-import GoodsItem from "./goodsItem";
+import CleanerItem from "..//components/goodsItem";
 // import '..//components/css/goods.css'
-import {  } from "react-router-dom";
+import {} from "react-router-dom";
 
-const goods: IGoods[] = [
+const cleaner: IGoods[] = [
   {
     _id: "wawawa",
     dateOfReceipt: "20.10.21",
@@ -131,8 +131,8 @@ const goods: IGoods[] = [
 const Goods = () => {
   return (
     <div className="mt-5">
-      {goods.map((goods) => (
-        <GoodsItem goods={goods} key={goods._id} />
+      {cleaner.map((cleaner) => (
+        <CleanerItem goods={cleaner} key={cleaner._id} />
       ))}
     </div>
   );
